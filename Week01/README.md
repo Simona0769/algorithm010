@@ -1,6 +1,6 @@
 # 第一周学习笔记
 ## 时间复杂度
-![时间复杂度](./assets/images/complexity.png)
+![时间复杂度](https://github.com/Simona0769/algorithm010/blob/master/Week01/assets/images/complexity.png)
 ## 数组、链表、跳表的基本实现和特性
 ### Array 数组
 * 实现：申请数组，在内存地址中申请一段连续的地址。每个地址都可以通过内存管理器直接访问
@@ -11,7 +11,7 @@
 ### Linked List 链表
 * 实现
 
-![Linked List](./assets/images/LinkedList.jpg)
+![Linked List](https://github.com/Simona0769/algorithm010/blob/master/Week01/assets/images/LinkedList.jpg)
 
 ```
 // js 单向链表实现
