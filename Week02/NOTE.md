@@ -55,6 +55,7 @@ let preOrderTraverse = (node, cb) {
 
   }
 }
+
 // 中序遍历
 let inOrderTraverse = (node, cb) {
   if (node) {
@@ -63,6 +64,7 @@ let inOrderTraverse = (node, cb) {
     inOrderTraverse(node.right, cb)
   }
 }
+
 // 后序遍历
 let postOrderTraverse = (node, cb) {
   if (node) {
@@ -72,3 +74,30 @@ let postOrderTraverse = (node, cb) {
   }
 }
 ```
+
+## 堆和二叉树的实现和特性
+### 堆 Heap
+* 定义  
+可以迅速找到一堆数中的最大或者最小值
+* 分类 
+  * 大顶堆或者大根堆： 根节点最大的堆
+  * 小顶堆或者小根堆： 根节点最小的堆
+
+* 常见实现： 二叉堆、斐波拉契堆
+* 常见操作（假设是大顶堆）
+  * find-max：O(1)
+  * delete-max: O(logN)
+  * insert(create): O(logN) or O(1)
+
+* 二叉堆性质
+  * 实现： 通过完全二叉树实现  
+  *完全二叉树是指除了叶子结点外，其余子节点都是满的*
+  *不是二叉搜索树* 
+  * 特性： 例如二叉堆（大顶）
+    1. 是一颗完全树
+    2. 树中任意节点的值总是 >= 其子节点的值；
+  * 性质
+    1. 根节点（堆顶元素）是： a[0],
+    2. 索引为i的左孩子的索引是： 2 * i + 1；
+    3. 索引为i的右孩子的索引是： 2 * i + 2;
+    4. 索引为i的父节点的索引是： floor((i - 1) / 2);
