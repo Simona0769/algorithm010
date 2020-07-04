@@ -70,3 +70,25 @@
 
 * 编码适用场景  
   问题能够分解成子问题来解决，子问题最优解能递推到最终问题的最优解。这种子问题最优解称为最优子结构
+
+## 二分查找
+* 前提条件
+    1. 目标函数单调性（单调递增或者递减）
+    2. 存在上下界（bounded）
+    3. 能够通过索引访问（index accessible)
+
+* 代码模版
+```
+let left = 0
+let right = array.length - 1
+while(left < = right) {
+    const mid = left + (right - left) / 2
+    if (array[mid] === target) {
+        break or return result
+    } else if (array[mid] < target) {
+        left = mid + 1
+    } else {
+        right = mid - 1
+    }
+}
+```
